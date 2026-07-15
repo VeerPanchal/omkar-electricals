@@ -84,11 +84,11 @@ export default function Services() {
         {/* Hero Section */}
         <section className="bg-background py-12 md:py-20 px-4">
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h1 className="text-3xl md:text-4xl font-medium text-foreground mb-6 font-geist">
               Our Electrical Services
             </h1>
-            <p className="text-lg text-gray-600 max-w-3xl">
-              Omkar Electricals provides comprehensive electrical services for residential, commercial, and industrial projects. Our experienced team is equipped to handle any electrical challenge.
+            <p className="text-lg text-gray-600 max-w-3xl font-geist text-justify">
+              Omkar Electricals provides comprehensive electrical services for residential, commercial, governments and industrial projects. Our experienced team is equipped to handle any electrical challenge.
             </p>
           </div>
         </section>
@@ -96,7 +96,7 @@ export default function Services() {
         {/* Services Grid */}
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-geist">
               {services.map((service) => {
                 const Icon = service.icon
                 return (
@@ -105,10 +105,10 @@ export default function Services() {
                     className="bg-white rounded-lg shadow-sm hover:shadow-md transition p-8 border border-border"
                   >
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="bg-secondary p-3 rounded-lg">
+                      <div className="p-3 rounded" style={{backgroundColor: '#58f70a'}}>
                         <Icon className="text-accent" size={28} />
                       </div>
-                      <h3 className="text-xl font-bold text-foreground">{service.title}</h3>
+                      <h3 className="text-xl font-semibold text-foreground">{service.title}</h3>
                     </div>
                     <p className="text-gray-600 mb-6">{service.description}</p>
                     <ul className="space-y-2">
@@ -129,11 +129,11 @@ export default function Services() {
         {/* Additional Services */}
         <section className="bg-secondary py-16 md:py-24 px-4">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+            <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-8 font-geist">
               Additional Services We Offer
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-geist">
               {[
                 {
                   title: 'Electrical Cable Laying',
@@ -153,7 +153,7 @@ export default function Services() {
                 },
               ].map((item) => (
                 <div key={item.title} className="bg-white p-6 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-3">{item.title}</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{item.title}</h3>
                   <p className="text-gray-600">{item.description}</p>
                 </div>
               ))}
@@ -164,11 +164,11 @@ export default function Services() {
         {/* Why Choose Us */}
         <section className="py-16 md:py-24 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
+            <h2 className="text-2xl md:text-3xl font-normal text-foreground mb-12 text-center font-geist">
               Why Choose Omkar Electricals?
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-geist">
               {[
                 {
                   title: 'Expert Team',
@@ -188,7 +188,7 @@ export default function Services() {
                 },
               ].map((item) => (
                 <div key={item.title} className="border-l-4 border-accent pl-6">
-                  <h3 className="text-xl font-bold text-foreground mb-2">{item.title}</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.description}</p>
                 </div>
               ))}
@@ -199,17 +199,17 @@ export default function Services() {
         {/* CTA Section */}
         <section className="bg-foreground text-white py-16 md:py-20 px-4">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6 font-geist">
               Ready to Get Started?
             </h2>
-            <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto font-geist">
               Contact us today for a consultation and quotation for your electrical project.
             </p>
             <a
               href="/contact"
-              className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-bold hover:opacity-90 transition"
+              className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-bold hover:opacity-90 transition font-inter"
             >
-              Request A Quote
+              Contact
             </a>
           </div>
         </section>

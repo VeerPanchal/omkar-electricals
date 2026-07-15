@@ -50,7 +50,7 @@ export function Header() {
               href="/contact"
               className="bg-accent text-accent-foreground px-6 py-2 rounded font-medium hover:opacity-90 transition"
             >
-              Get A Quote
+              Contact
             </Link>
           </div>
 
