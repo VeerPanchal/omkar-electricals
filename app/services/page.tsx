@@ -87,7 +87,7 @@ export default function Services() {
             <h1 className="text-3xl md:text-4xl font-medium text-foreground mb-6 font-geist">
               Our Electrical Services
             </h1>
-            <p className="text-lg text-gray-600 max-w-3xl font-geist text-justify">
+            <p className="text-lg text-gray-600 max-w-3xl font-geist">
               Omkar Electricals provides comprehensive electrical services for residential, commercial, governments and industrial projects. Our experienced team is equipped to handle any electrical challenge.
             </p>
           </div>
