@@ -25,7 +25,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="/about"
-                  className="inline-block bg-accent text-accent-foreground px-6 py-3 rounded font-bold hover:opacity-90 transition font-quicksand"
+                  className="inline-block bg-accent text-accent-foreground px-6 py-3 rounded font-medium hover:opacity-90 transition font-inter"
                 >
                   ABOUT US
                 </Link>
@@ -57,7 +57,7 @@ export default function Home() {
                   <span className="text-accent">Omkar</span> Electricals
                 </h2>
                 <p className="text-gray-700 mb-4 leading-relaxed text-justify">
-                  is one of the top electrical contractors in Mumbai because we are happy to be connected with some of the most prestigious electrical projects in the city. With a group of highly skilled and knowledgeable experts who are on board and completely comprehend your needs. Electrical cable laying, concealed wiring, casing wiring, industrial wiring, residential wiring, turnkey electrical projects, maintenance and installation, among other electrical services, are just a few of the many electrical services we provide in Mumbai. In Mumbai, we offer the best solar kits. The electrical contractors we work with in Navi Mumbai and Mumbai are excellent.
+                  is one of the top Government Electrical Contractors in Maharashtra because we are happy to be connected with some of the most prestigious electrical projects in the city. With a group of highly skilled and knowledgeable experts who are on board and completely comprehend your needs. Electrical cable laying, concealed wiring, casing wiring, industrial wiring, residential wiring, turnkey electrical projects, maintenance and installation, among other electrical services, are just a few of the many electrical services we provide in Mumbai. In Mumbai, we offer the best solar kits. The electrical contractors we work with in Navi Mumbai and Mumbai are excellent.
                 </p>
                 <p className="text-gray-700 leading-relaxed text-justify">
                   For any kind of property, electrical wiring is crucial. You cannot afford to be lax in this situation. To ensure that quality is never compromised, we take all necessary safety precautions. We are one of Mumbai&apos;s most dependable electrical contractors because of this. Our network is incredibly robust and provides power services in Mumbai that are unmatched. So don&apos;t hesitate to look for a contractor who handles jobs like cover wiring, industrial wiring, etc. You are already in the proper location. Mumbai has a large number of electrical contractors, but we stand out from the crowd since we are superior to them.
@@ -112,7 +112,7 @@ export default function Home() {
             <div className="text-center">
               <Link
                 href="/services"
-                className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-bold hover:opacity-90 transition font-inter"
+                className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-medium hover:opacity-90 transition font-inter"
               >
                 View All Services
               </Link>
@@ -131,9 +131,9 @@ export default function Home() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-bold hover:opacity-90 transition font-quicksand"
+              className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-medium hover:opacity-90 transition font-inter"
             >
-              Get A Quote Now
+              Contact Now
             </Link>
           </div>
         </section>
