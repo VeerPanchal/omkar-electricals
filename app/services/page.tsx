@@ -108,10 +108,10 @@ export default function Services() {
                 return (
                   <div
                     key={service.title}
-                    className="bg-white rounded-lg shadow-sm hover:shadow-md transition border border-border overflow-hidden flex flex-col"
+                    className="bg-white rounded-lg shadow-sm hover:shadow-md transition border border-border overflow-hidden"
                   >
                     {service.image && (
-                      <div className="w-full overflow-y-auto">
+                      <div className="w-full">
                         <img
                           src={service.image}
                           alt={service.title}
@@ -119,7 +119,7 @@ export default function Services() {
                         />
                       </div>
                     )}
-                    <div className="p-8 flex-1 flex flex-col">
+                    <div className="p-8">
                       <div className="flex items-center gap-4 mb-4">
                         <div className="p-3 rounded" style={{ backgroundColor: '#58f70a' }}>
                           <Icon className="text-accent" size={28} />
