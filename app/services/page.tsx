@@ -12,6 +12,7 @@ const services = [
     icon: Lightbulb,
     title: 'Residential Wiring',
     description: 'Complete electrical wiring solutions for residential properties with safety compliance and energy efficiency.',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5h0vBX0i7Y641cJ4tYRRolqtEFuY11.png',
     details: [
       'Internal wiring systems',
       'Safety installations',
@@ -34,6 +35,7 @@ const services = [
     icon: Zap,
     title: 'Industrial Electrical Work',
     description: 'Heavy-duty electrical systems and infrastructure for industrial applications.',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qV1D3WJNYQ92w51dKUcwAK6zmg6cVE.png',
     details: [
       'Large scale installations',
       'Motor control systems',
@@ -45,6 +47,7 @@ const services = [
     icon: Wrench,
     title: 'Maintenance & Repair',
     description: 'Professional maintenance and repair services to keep your electrical systems running smoothly.',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dYc3jcrTgOT6ISU3mRVsC0ceWtzbnn.png',
     details: [
       'Regular maintenance',
       'Emergency repairs',
@@ -102,23 +105,34 @@ export default function Services() {
                 return (
                   <div
                     key={service.title}
-                    className="bg-white rounded-lg shadow-sm hover:shadow-md transition p-8 border border-border"
+                    className="bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden border border-border flex flex-col"
                   >
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="p-3 rounded" style={{ backgroundColor: '#58f70a' }}>
-                        <Icon className="text-accent" size={28} />
+                    {service.image && (
+                      <div className="w-full h-48 overflow-hidden">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                      <h3 className="text-xl font-semibold text-foreground">{service.title}</h3>
+                    )}
+                    <div className="p-8 flex-1 flex flex-col">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="p-3 rounded" style={{ backgroundColor: '#58f70a' }}>
+                          <Icon className="text-accent" size={28} />
+                        </div>
+                        <h3 className="text-xl font-semibold text-foreground">{service.title}</h3>
+                      </div>
+                      <p className="text-gray-600 mb-6">{service.description}</p>
+                      <ul className="space-y-2">
+                        {service.details.map((detail) => (
+                          <li key={detail} className="flex gap-2 text-sm text-gray-700">
+                            <span className="text-accent font-bold">✓</span>
+                            {detail}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    <p className="text-gray-600 mb-6">{service.description}</p>
-                    <ul className="space-y-2">
-                      {service.details.map((detail) => (
-                        <li key={detail} className="flex gap-2 text-sm text-gray-700">
-                          <span className="text-accent font-bold">✓</span>
-                          {detail}
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                 )
               })}
