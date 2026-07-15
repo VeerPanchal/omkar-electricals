@@ -84,7 +84,7 @@ export default function Services() {
         {/* Hero Section */}
         <section className="bg-background py-12 md:py-20 px-4">
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-medium text-foreground mb-6 font-geist">
+            <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-6 font-geist">
               Our Electrical Services
             </h1>
             <p className="text-lg text-gray-600 max-w-3xl font-geist">
