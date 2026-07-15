@@ -13,12 +13,8 @@ export function Header() {
       <nav className="py-4 px-4 font-inter">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <img src="/omkar-logo.png" alt="Omkar Electricals" className="h-12 w-auto" />
-            <div className="hidden sm:block">
-              <div className="font-bold text-foreground text-lg">Omkar Electricals</div>
-              <div className="text-xs text-muted-foreground">Adding Light to Life</div>
-            </div>
+          <Link href="/" className="flex items-center gap-3">
+            <img src="/omkar-logo-new.png" alt="Omkar Electricals" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop menu */}

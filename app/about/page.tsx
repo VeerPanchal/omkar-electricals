@@ -27,12 +27,13 @@ export default function About() {
                   Omkar Electricals is a comprehensive electrical contracting and service organization. Our programme involves a dynamic and committed work force that serves its clients in meeting and exceeding their commitment towards sustainable built environment, energy efficiency and safety compliance.
                 </p>
               </div>
-              <div className="relative h-80 md:h-96 w-full">
+              <div className="relative h-80 md:h-96 w-full flex items-center justify-center bg-background rounded-lg">
                 <Image
-                  src="/team-illustration.png"
-                  alt="Our professional team"
-                  fill
-                  className="object-cover rounded-lg"
+                  src="/omkar-logo-new.png"
+                  alt="Omkar Electricals Logo"
+                  width={300}
+                  height={300}
+                  className="object-contain"
                 />
               </div>
             </div>
