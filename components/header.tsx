@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Menu, X, Share2, Users, MessageSquare } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
 export function Header() {
@@ -9,33 +9,6 @@ export function Header() {
 
   return (
     <header className="bg-white border-b border-border">
-      {/* Top bar with contact info */}
-      <div className="bg-background py-2 px-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between text-sm">
-          <div className="flex items-center gap-6">
-            <a href="mailto:omkar@electricals.com" className="flex items-center gap-2 text-foreground hover:text-accent">
-              <span>✉</span>
-              <span>omkar@electricals.com</span>
-            </a>
-            <a href="tel:+919876543210" className="flex items-center gap-2 text-foreground hover:text-accent">
-              <span>📞</span>
-              <span>(+91) 9876543210</span>
-            </a>
-          </div>
-          <div className="flex items-center gap-3">
-            <a href="#" aria-label="Facebook" className="text-foreground hover:text-accent">
-              <Share2 size={18} />
-            </a>
-            <a href="#" aria-label="LinkedIn" className="text-foreground hover:text-accent">
-              <Users size={18} />
-            </a>
-            <a href="#" aria-label="Twitter" className="text-foreground hover:text-accent">
-              <MessageSquare size={18} />
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main navigation */}
       <nav className="py-4 px-4 font-inter">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
