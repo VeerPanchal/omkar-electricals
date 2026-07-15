@@ -8,6 +8,8 @@ const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const quicksand = Quicksand({ subsets: ['latin'], variable: '--font-quicksand' })
 
+const fontClassName = `${geist.variable} ${inter.variable} ${quicksand.variable}`
+
 export const metadata: Metadata = {
   title: 'Omkar Electricals - Professional Electrical Services',
   description: 'Omkar Electricals provides professional electrical contracting services including residential wiring, industrial installation, and electrical maintenance.',
@@ -44,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`bg-background ${geist.variable} ${inter.variable} ${quicksand.variable}`}>
+    <html lang="en" className={`bg-background ${fontClassName}`}>
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
