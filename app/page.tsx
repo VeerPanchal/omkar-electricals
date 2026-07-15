@@ -18,7 +18,7 @@ export default function Home() {
                   WELCOME TO OMKAR ELECTRICALS
                 </p>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight font-geist">
-                  Electrical contractors in Mumbai
+                  Government Electrical contractors in Maharshtra
                 </h1>
                 <p className="text-gray-600 text-base leading-relaxed mb-8 text-justify font-geist">
                   In Maharashtra, most individuals confuse an electrician with an electrical contractor since they do not know the essential distinctions between them. However, both positions are different from one another and might be regarded as electricians employed by electrical contractors in Mumbai. Let&apos;s examine a few of the basic tasks performed by electrical contractors.
