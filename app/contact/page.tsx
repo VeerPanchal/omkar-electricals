@@ -92,16 +92,16 @@ export default function Contact() {
         {/* Hero Section */}
         <section className="bg-background py-12 md:py-20 px-4">
           <div className="max-w-7xl mx-auto">
-            <p className="text-accent font-bold text-sm md:text-base mb-4">WHO WE ARE?</p>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <p className="text-accent font-bold text-sm md:text-base mb-4 font-geist">WHO WE ARE?</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-geist">
               You Have a <span className="text-accent">Question?</span>
             </h1>
-            <p className="text-2xl md:text-3xl text-foreground font-semibold">Let us Answer it.</p>
+            <p className="text-2xl md:text-3xl text-foreground font-semibold font-geist">Let us Answer it.</p>
           </div>
         </section>
 
         {/* Contact Info Cards */}
-        <section className="py-16 md:py-24 px-4">
+        <section className="py-16 md:py-24 px-4 font-geist">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               {/* Head Office */}
@@ -111,7 +111,7 @@ export default function Contact() {
                     <MapPin className="text-accent" size={32} />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Head Office</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">Head Office</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   Janwadkar complex lower ground (LG-2),
                   <br />
@@ -128,7 +128,7 @@ export default function Contact() {
                     <MapPin className="text-accent" size={32} />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Branch Office</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">Branch Office</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   Shop no.23, New Shopping Centre,
                   <br />
@@ -148,7 +148,7 @@ export default function Contact() {
                       <Phone className="text-accent" size={32} />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">Connect us</h3>
+                  <h3 className="text-xl font-semibold text-foreground">Connect us</h3>
                 </div>
                 <div className="space-y-4">
                   <div>
