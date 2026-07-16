@@ -1,7 +1,5 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-
 const brands = [
   {
     name: 'KEI Wires & Cables',
@@ -50,8 +48,6 @@ const brands = [
 ]
 
 export function BrandCarousel() {
-  const [isHovered, setIsHovered] = useState(false)
-
   // Duplicate brands array for seamless infinite scroll
   const displayBrands = [...brands, ...brands]
 
@@ -70,31 +66,29 @@ export function BrandCarousel() {
         </div>
 
         {/* Carousel Container */}
-        <div
-          className="relative w-full overflow-hidden"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
+        <div className="relative w-full overflow-hidden">
           {/* Fade Overlays */}
           <div className="absolute left-0 top-0 w-16 md:w-32 h-full bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 w-16 md:w-32 h-full bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
           {/* Carousel */}
           <div
-            className={`flex gap-8 md:gap-12 ${isHovered ? 'pause' : 'animate-scroll'}`}
+            className="flex gap-8 md:gap-12 animate-scroll"
             style={{
-              animation: isHovered ? 'none' : 'scroll 40s linear infinite',
+              animation: 'scroll 25s linear infinite',
             }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           >
             {displayBrands.map((brand, index) => (
               <div
                 key={`${brand.name}-${index}`}
-                className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 flex items-center justify-center bg-white rounded-lg shadow-sm border border-border transition-all duration-300 hover:shadow-md hover:scale-105 group"
+                className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 flex items-center justify-center bg-white rounded-lg shadow-sm border border-border"
               >
                 <img
                   src={brand.logo}
                   alt={brand.name}
-                  className="w-24 h-24 md:w-32 md:h-32 object-contain transition-all duration-300 group-hover:filter-none filter grayscale hover:grayscale-0"
+                  className="w-24 h-24 md:w-32 md:h-32 object-contain"
                 />
               </div>
             ))}
@@ -108,26 +102,16 @@ export function BrandCarousel() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(calc(-50% - 1rem));
+            transform: translateX(calc(-50% - 2rem));
           }
         }
 
         .animate-scroll {
-          animation: scroll 40s linear infinite;
+          animation: scroll 25s linear infinite;
         }
 
-        .pause {
+        .animate-scroll:hover {
           animation-play-state: paused;
-        }
-
-        img {
-          filter: grayscale(100%);
-          transition: filter 0.3s ease, transform 0.3s ease;
-        }
-
-        img:hover {
-          filter: grayscale(0%);
-          transform: scale(1.1);
         }
       `}</style>
     </div>
