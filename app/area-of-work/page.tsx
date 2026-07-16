@@ -59,7 +59,7 @@ export default function AreaOfWork() {
             <h1 className="text-4xl md:text-5xl font-medium text-foreground mb-6 font-geist">
               Area of <span className="text-accent">Work</span>
             </h1>
-            <p className="text-lg text-gray-600 max-w-2xl font-geist text-justify">
+            <p className="text-lg text-gray-600 max-w-2xl font-geist">
               Our expertise spans across a wide range of sectors, where we have successfully completed numerous electrical projects for industrial facilities, banking institutions, commercial buildings, residential developments, hospitals, educational institutions, hospitality establishments, and real estate projects. We are committed to delivering safe, reliable, and high-quality electrical solutions that meet the highest industry standards.
             </p>
           </div>
@@ -73,7 +73,7 @@ export default function AreaOfWork() {
                 <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-4 font-geist">
                   {sector.name}
                 </h2>
-                <p className="text-lg text-gray-700 mb-12 max-w-3xl font-geist text-justify">
+                <p className="text-lg text-gray-700 mb-12 max-w-3xl font-geist">
                   {sector.description}
                 </p>
 
