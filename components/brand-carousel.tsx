@@ -72,12 +72,7 @@ export function BrandCarousel() {
           <div className="absolute right-0 top-0 w-16 md:w-32 h-full bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
           {/* Carousel */}
-          <div
-            className="flex gap-8 md:gap-12 animate-scroll"
-            style={{
-              animation: 'scroll 10s linear infinite',
-            }}
-          >
+          <div className="flex gap-8 md:gap-12 animate-scroll">
             {displayBrands.map((brand, index) => (
               <div
                 key={`${brand.name}-${index}`}
@@ -96,16 +91,17 @@ export function BrandCarousel() {
 
       <style jsx>{`
         @keyframes scroll {
-          0% {
+          from {
             transform: translateX(0);
           }
-          100% {
-            transform: translateX(calc(-50% - 2rem));
+          to {
+            transform: translateX(calc(-50%));
           }
         }
 
         .animate-scroll {
-          animation: scroll 25s linear infinite;
+          animation: scroll 12s linear infinite;
+          will-change: transform;
         }
 
         .animate-scroll:hover {
