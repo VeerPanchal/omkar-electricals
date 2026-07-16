@@ -103,7 +103,7 @@ export default function Contact() {
         {/* Contact Info Cards */}
         <section className="py-16 md:py-24 px-4 font-geist">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               {/* Head Office */}
               <div className="bg-white p-8 rounded-lg shadow-sm border border-border text-center">
                 <div className="flex justify-center mb-4">
@@ -118,25 +118,6 @@ export default function Contact() {
                   Panchaganga hospital, Kolhapur,
                   <br />
                   Maharashtra 416002
-                </p>
-              </div>
-
-              {/* Branch Office */}
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border text-center">
-                <div className="flex justify-center mb-4">
-                  <div className="bg-secondary p-4 rounded-lg">
-                    <MapPin className="text-accent" size={32} />
-                  </div>
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-4">Branch Office</h3>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  Shop no.23, New Shopping Centre,
-                  <br />
-                  Near Rajdhani Bakery, Government Colony,
-                  <br />
-                  Bandra East, Mumbai,
-                  <br />
-                  Maharashtra 400051 India.
                 </p>
               </div>
 
