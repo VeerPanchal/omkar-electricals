@@ -70,10 +70,10 @@ export default function AreaOfWork() {
           <div className="max-w-7xl mx-auto">
             {sectors.map((sector) => (
               <div key={sector.name} className="mb-16 md:mb-24">
-                <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4 font-geist">
+                <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-4 font-geist">
                   {sector.name}
                 </h2>
-                <p className="text-lg text-gray-700 mb-12 max-w-3xl font-geist">
+                <p className="text-lg text-gray-700 mb-12 max-w-3xl font-geist text-justify">
                   {sector.description}
                 </p>
 
