@@ -1,5 +1,6 @@
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { BrandCarousel } from '@/components/brand-carousel'
 
 export const metadata = {
   title: 'Our Electrical Services - Omkar Electricals',
@@ -162,6 +163,9 @@ export default function Services() {
             </div>
           </div>
         </section>
+
+        {/* Trusted Brands & Partners */}
+        <BrandCarousel />
 
         {/* Why Choose Us */}
         <section className="py-16 md:py-24 px-4 bg-white">
