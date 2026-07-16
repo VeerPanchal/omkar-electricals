@@ -166,7 +166,7 @@ export default function Services() {
         {/* Why Choose Us */}
         <section className="py-16 md:py-24 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-normal text-foreground mb-12 text-center font-geist">
+            <h2 className="text-2xl md:text-3xl font-medium text-foreground mb-12 text-center font-geist">
               Why Choose Omkar Electricals?
             </h2>
 
