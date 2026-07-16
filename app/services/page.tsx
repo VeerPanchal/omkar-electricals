@@ -1,6 +1,5 @@
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { Zap, Hammer, Wrench, Building, AlertTriangle, Lightbulb } from 'lucide-react'
 
 export const metadata = {
   title: 'Our Electrical Services - Omkar Electricals',
@@ -9,7 +8,6 @@ export const metadata = {
 
 const services = [
   {
-    icon: Lightbulb,
     title: 'Residential Wiring',
     description: 'Complete electrical wiring solutions for residential properties with safety compliance and energy efficiency.',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-rnKj9rabCjzGR23dUL3ObWLvzOhJYp.png',
@@ -21,7 +19,6 @@ const services = [
     ],
   },
   {
-    icon: Building,
     title: 'Commercial Installation',
     description: 'Professional electrical installation for commercial and office spaces with minimal disruption.',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yM7hpvqiOeOtvzCC8prcRoP6sKOI9P.png',
@@ -33,7 +30,6 @@ const services = [
     ],
   },
   {
-    icon: Zap,
     title: 'Industrial Electrical Work',
     description: 'Heavy-duty electrical systems and infrastructure for industrial applications.',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-levoq9Jx1uGLsRFZ7HtDL5b0I6XeLG.png',
@@ -45,7 +41,6 @@ const services = [
     ],
   },
   {
-    icon: Wrench,
     title: 'Maintenance & Repair',
     description: 'Professional maintenance and repair services to keep your electrical systems running smoothly.',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SDaKRqCMcXTkpFVVFDWW7dkJ1NXUi1.png',
@@ -57,7 +52,6 @@ const services = [
     ],
   },
   {
-    icon: Hammer,
     title: 'Turnkey Projects',
     description: 'Complete electrical project execution from design to installation and commissioning.',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FRJ7GvdlD3SRKwVCRq5TBUCtCE86MA.png',
@@ -69,7 +63,6 @@ const services = [
     ],
   },
   {
-    icon: AlertTriangle,
     title: 'Safety Compliance',
     description: 'Ensure your electrical systems meet all safety standards and regulations.',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-37HJ96LwKYeu6n8DzBpXGkHcnGQeTm.png',
@@ -103,9 +96,7 @@ export default function Services() {
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-geist">
-              {services.map((service) => {
-                const Icon = service.icon
-                return (
+              {services.map((service) => (
                   <div
                     key={service.title}
                     className="bg-white rounded-lg shadow-sm hover:shadow-md transition border border-border overflow-hidden"
@@ -120,12 +111,7 @@ export default function Services() {
                       </div>
                     )}
                     <div className="p-8">
-                      <div className="flex items-center gap-4 mb-4">
-                        <div className="p-3 rounded" style={{ backgroundColor: '#58f70a' }}>
-                          <Icon className="text-accent" size={28} />
-                        </div>
-                        <h3 className="text-xl font-semibold text-foreground">{service.title}</h3>
-                      </div>
+                      <h3 className="text-xl font-semibold text-foreground mb-4">{service.title}</h3>
                       <p className="text-gray-600 mb-6">{service.description}</p>
                       <ul className="space-y-2">
                         {service.details.map((detail) => (
@@ -137,8 +123,7 @@ export default function Services() {
                       </ul>
                     </div>
                   </div>
-                )
-              })}
+              ))}
             </div>
           </div>
         </section>
