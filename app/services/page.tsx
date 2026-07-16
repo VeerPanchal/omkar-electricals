@@ -97,32 +97,32 @@ export default function Services() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-geist">
               {services.map((service) => (
-                  <div
-                    key={service.title}
-                    className="bg-white rounded-lg shadow-sm hover:shadow-md transition border border-border overflow-hidden"
-                  >
-                    {service.image && (
-                      <div className="w-full">
-                        <img
-                          src={service.image}
-                          alt={service.title}
-                          className="w-full h-auto"
-                        />
-                      </div>
-                    )}
-                    <div className="p-8">
-                      <h3 className="text-xl font-semibold text-foreground mb-4">{service.title}</h3>
-                      <p className="text-gray-600 mb-6">{service.description}</p>
-                      <ul className="space-y-2">
-                        {service.details.map((detail) => (
-                          <li key={detail} className="flex gap-2 text-sm text-gray-700">
-                            <span className="text-accent font-bold">✓</span>
-                            {detail}
-                          </li>
-                        ))}
-                      </ul>
+                <div
+                  key={service.title}
+                  className="bg-white rounded-lg shadow-sm hover:shadow-md transition border border-border overflow-hidden"
+                >
+                  {service.image && (
+                    <div className="w-full">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-auto"
+                      />
                     </div>
+                  )}
+                  <div className="p-8">
+                    <h3 className="text-xl font-semibold text-foreground mb-4">{service.title}</h3>
+                    <p className="text-gray-600 mb-6">{service.description}</p>
+                    <ul className="space-y-2">
+                      {service.details.map((detail) => (
+                        <li key={detail} className="flex gap-2 text-sm text-gray-700">
+                          <span className="text-accent font-bold">✓</span>
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
+                </div>
               ))}
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function Services() {
         {/* Why Choose Us */}
         <section className="py-16 md:py-24 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-normal text-foreground mb-12 text-center font-geist">
+            <h2 className="text-2xl md:text-3xl font-medium text-foreground mb-12 text-center font-geist">
               Why Choose Omkar Electricals?
             </h2>
 
@@ -174,7 +174,7 @@ export default function Services() {
               {[
                 {
                   title: 'Expert Team',
-                  description: 'Highly skilled and 10+ experienced electrical professionals.',
+                  description: 'Highly skilled and 10+ years of experienced electrical professionals.',
                 },
                 {
                   title: 'Quality Assurance',
