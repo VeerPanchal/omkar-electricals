@@ -104,26 +104,26 @@ export default function AreaOfWork() {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
                 {/* Stat 1 */}
                 <div className="text-center">
-                  <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 font-geist">500+</h3>
-                  <p className="text-lg md:text-xl text-white font-geist">Happy Clients</p>
+                  <h3 className="text-5xl md:text-6xl font-semibold text-white mb-2 font-roboto">500+</h3>
+                  <p className="text-lg md:text-xl text-white font-inter">Happy Clients</p>
                 </div>
 
                 {/* Stat 2 */}
                 <div className="text-center">
-                  <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 font-geist">40+</h3>
-                  <p className="text-lg md:text-xl text-white font-geist">Locations</p>
+                  <h3 className="text-5xl md:text-6xl font-semibold text-white mb-2 font-roboto">40+</h3>
+                  <p className="text-lg md:text-xl text-white font-inter">Locations</p>
                 </div>
 
                 {/* Stat 3 */}
                 <div className="text-center">
-                  <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 font-geist">300+</h3>
-                  <p className="text-lg md:text-xl text-white font-geist">Projects</p>
+                  <h3 className="text-5xl md:text-6xl font-semibold text-white mb-2 font-roboto">300+</h3>
+                  <p className="text-lg md:text-xl text-white font-inter">Projects</p>
                 </div>
 
                 {/* Stat 4 */}
                 <div className="text-center">
-                  <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 font-geist">40+</h3>
-                  <p className="text-lg md:text-xl text-white font-geist">Professionals</p>
+                  <h3 className="text-5xl md:text-6xl font-semibold text-white mb-2 font-roboto">40+</h3>
+                  <p className="text-lg md:text-xl text-white font-inter">Professionals</p>
                 </div>
               </div>
             </div>

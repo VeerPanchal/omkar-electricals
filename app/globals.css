@@ -59,7 +59,7 @@
   --secondary-foreground: #1a1a1a;
   --muted: #e8dcd0;
   --muted-foreground: #666666;
-  --accent: #d4a40a;
+  --accent: #3266cc;
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
   --border: #e8dcd0;
@@ -171,5 +171,8 @@
   }
   .font-quicksand {
     font-family: var(--font-quicksand);
+  }
+  .font-roboto {
+    font-family: var(--font-roboto);
   }
 }
