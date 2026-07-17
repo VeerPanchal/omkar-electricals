@@ -77,12 +77,12 @@ export default function AreaOfWork() {
                   {sector.description}
                 </p>
 
-                {/* Logos Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Logos Display */}
+                <div className="flex flex-wrap gap-8">
                   {sector.logos.map((logo) => (
                     <div
                       key={logo.name}
-                      className="bg-white p-8 rounded-lg shadow-sm border border-border flex items-center justify-center hover:shadow-md transition h-40"
+                      className="flex-1 min-w-64 bg-white p-8 rounded-lg shadow-sm border border-border flex items-center justify-center hover:shadow-md transition h-40"
                     >
                       <img
                         src={logo.url}
@@ -94,6 +94,39 @@ export default function AreaOfWork() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Statistics Section */}
+        <section className="py-12 md:py-16 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="bg-accent rounded-3xl px-8 md:px-12 py-16 md:py-20">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+                {/* Stat 1 */}
+                <div className="text-center">
+                  <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 font-geist">500+</h3>
+                  <p className="text-lg md:text-xl text-white font-geist">Happy Clients</p>
+                </div>
+
+                {/* Stat 2 */}
+                <div className="text-center">
+                  <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 font-geist">40+</h3>
+                  <p className="text-lg md:text-xl text-white font-geist">Locations</p>
+                </div>
+
+                {/* Stat 3 */}
+                <div className="text-center">
+                  <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 font-geist">300+</h3>
+                  <p className="text-lg md:text-xl text-white font-geist">Projects</p>
+                </div>
+
+                {/* Stat 4 */}
+                <div className="text-center">
+                  <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 font-geist">40+</h3>
+                  <p className="text-lg md:text-xl text-white font-geist">Professionals</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
