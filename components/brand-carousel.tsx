@@ -90,20 +90,3 @@ export function BrandCarousel() {
     </div>
   )
 }
-          to {
-            transform: translateX(calc(-50%));
-          }
-        }
-
-        .animate-scroll {
-          animation: scroll 12s linear infinite;
-          will-change: transform;
-        }
-
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
-    </div>
-  )
-}
