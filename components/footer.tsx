@@ -45,7 +45,6 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          </div>
         </div>
 
         {/* Divider */}
