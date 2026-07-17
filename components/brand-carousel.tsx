@@ -1,5 +1,7 @@
 'use client'
 
+import Marquee from 'react-fast-marquee'
+
 const brands = [
   {
     name: 'KEI Wires & Cables',
@@ -27,7 +29,7 @@ const brands = [
   },
   {
     name: 'Philips',
-    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1UrWkuW0o6b5kDKLOP9PLut6hRSrKs.png',
+    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1UrWkuW0o6b5kDKLOP9PLut6rRSrKs.png',
   },
   {
     name: 'M-Seal',
@@ -48,11 +50,8 @@ const brands = [
 ]
 
 export function BrandCarousel() {
-  // Duplicate brands array for seamless infinite scroll
-  const displayBrands = [...brands, ...brands]
-
   return (
-    <div className="w-full bg-background py-12 md:py-16 px-4 overflow-hidden">
+    <div className="w-full bg-background py-12 md:py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -66,17 +65,17 @@ export function BrandCarousel() {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full">
           {/* Fade Overlays */}
           <div className="absolute left-0 top-0 w-16 md:w-32 h-full bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 w-16 md:w-32 h-full bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
-          {/* Carousel */}
-          <div className="flex gap-8 md:gap-12 animate-scroll">
-            {displayBrands.map((brand, index) => (
+          {/* Marquee Carousel */}
+          <Marquee speed={50} gradient={false} pauseOnHover={true}>
+            {brands.map((brand) => (
               <div
-                key={`${brand.name}-${index}`}
-                className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 flex items-center justify-center bg-white rounded-lg shadow-sm border border-border"
+                key={brand.name}
+                className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 mx-4 md:mx-6 flex items-center justify-center bg-white rounded-lg shadow-sm border border-border"
               >
                 <img
                   src={brand.logo}
@@ -85,29 +84,9 @@ export function BrandCarousel() {
                 />
               </div>
             ))}
-          </div>
+          </Marquee>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes scroll {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(calc(-50%));
-          }
-        }
-
-        .animate-scroll {
-          animation: scroll 12s linear infinite;
-          will-change: transform;
-        }
-
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
     </div>
   )
 }
