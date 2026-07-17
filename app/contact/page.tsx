@@ -112,7 +112,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-4">Head Office</h3>
-                <p className="text-gray-700 text-sm leading-relaxed">
+                <p className="text-gray-700 text-base leading-relaxed">
                   Janwadkar complex lower ground (LG-2),
                   <br />
                   Panchaganga hospital, Kolhapur,
@@ -132,29 +132,29 @@ export default function Contact() {
                   <h3 className="text-xl font-semibold text-foreground">Connect us</h3>
                 </div>
                 <div className="space-y-4">
-                  <div>
+                  <div className="text-center">
                     <p className="text-gray-600 text-sm font-semibold mb-1">Email</p>
                     <a
                       href="mailto:omkar@electricals.com"
-                      className="text-accent hover:underline font-semibold"
+                      className="text-accent hover:underline font-normal"
                     >
                       omkar@electricals.com
                     </a>
                   </div>
-                  <div>
+                  <div className="text-center">
                     <p className="text-gray-600 text-sm font-semibold mb-1">Phone</p>
                     <a
-                      href="tel:+919876543210"
-                      className="text-accent hover:underline font-semibold"
+                      href="tel:+917721027474"
+                      className="text-accent hover:underline font-normal"
                     >
-                      (+91) 9876543210
+                      (+91) 7721027474
                     </a>
                     <br />
                     <a
-                      href="tel:+918452040929"
-                      className="text-accent hover:underline font-semibold"
+                      href="tel:+919209254245"
+                      className="text-accent hover:underline font-normal"
                     >
-                      (+91) 8452040929
+                      (+91) 9209254245
                     </a>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ export default function Contact() {
         {/* Contact Form Section */}
         <section className="bg-secondary py-16 md:py-24 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-accent mb-12 text-center">
               Tell us About Yourself
             </h2>
 
@@ -277,7 +277,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-accent text-accent-foreground px-8 py-3 rounded font-bold hover:opacity-90 transition disabled:opacity-50"
+                  className="bg-yellow-400 text-foreground px-8 py-3 rounded font-bold hover:opacity-90 transition disabled:opacity-50"
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit'}
                 </button>
