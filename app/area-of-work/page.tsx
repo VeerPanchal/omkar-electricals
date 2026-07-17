@@ -6,7 +6,7 @@ import { Footer } from '@/components/footer'
 export default function AreaOfWork() {
   const sectors = [
     {
-      name: 'Industrial',
+      name: 'Institutional',
       description: 'We have successfully executed electrical projects for educational institutions, delivering safe, reliable, and energy-efficient electrical systems for schools, colleges, universities, and training campuses. Our solutions ensure uninterrupted power supply, modern infrastructure, and compliance with the highest safety standards, creating secure and efficient learning environments.',
       logos: [
         {
@@ -56,7 +56,7 @@ export default function AreaOfWork() {
         {/* Hero Section */}
         <section className="bg-background py-12 px-4">
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-medium text-foreground mb-6 font-geist">
+            <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-6 font-geist">
               Area of <span className="text-accent">Work</span>
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl font-geist">
