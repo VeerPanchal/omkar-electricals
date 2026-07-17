@@ -29,7 +29,7 @@ const brands = [
   },
   {
     name: 'Philips',
-    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1UrWkuW0o6b5kDKLOP9PLut6rRSrKs.png',
+    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9Mho0U0Nv1Fk0zbPNBu6nGPtFGdlXW.png',
   },
   {
     name: 'M-Seal',
