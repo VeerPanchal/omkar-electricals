@@ -18,7 +18,7 @@ export function Header() {
           </Link>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-14">
             <Link href="/" className="text-foreground hover:text-accent font-medium transition">
               Home
             </Link>
@@ -56,13 +56,13 @@ export function Header() {
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={22} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-3">
+          <div className="md:hidden mt-4 pb-4 space-y-2">
             <Link
               href="/"
               className="block text-foreground hover:text-accent font-medium"

@@ -31,8 +31,8 @@ export default function About() {
                 <Image
                   src="/omkar-logo-new.png"
                   alt="Omkar Electricals Logo"
-                  width={300}
-                  height={300}
+                  width={400}
+                  height={400}
                   className="object-contain"
                 />
               </div>
