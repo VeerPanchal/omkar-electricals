@@ -24,7 +24,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
                 <p className="text-gray-1000 leading-relaxed mb-4 font-geist text-justify">
-                  Omkar Electricals is a comprehensive electrical contracting and service organization. Our programme involves a dynamic and committed work force that serves its clients in meeting and exceeding their commitment towards sustainable built environment, energy efficiency and safety compliance.
+                  Omkar Electricals is a trusted government licensed electrical contracting and services company, delivering comprehensive electrical solutions across residential, commercial, industrial, and institutional sectors. Backed by a skilled and dedicated workforce, we are committed to exceeding client expectations by providing reliable, energy-efficient, and safe electrical systems. Our focus on quality, sustainability, innovation, and compliance with the highest safety standards enables us to create efficient and future-ready infrastructure for every project.
                 </p>
               </div>
               <div className="relative h-80 md:h-96 w-full flex items-center justify-center bg-background rounded-lg">
@@ -72,7 +72,7 @@ export default function About() {
                     src="/vision-image.png"
                     alt="Our vision"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
                 <h3 className="text-2xl font-medium text-foreground mb-4 font-geist">Our Vision</h3>
@@ -88,7 +88,7 @@ export default function About() {
                     src="/mission-image.png"
                     alt="Our mission"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
                 <h3 className="text-2xl font-medium text-foreground mb-4 font-geist">Our Mission</h3>
@@ -110,7 +110,7 @@ export default function About() {
                   src="/values-image.png"
                   alt="Our core values"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
 
