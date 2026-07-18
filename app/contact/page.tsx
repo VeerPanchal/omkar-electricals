@@ -29,7 +29,7 @@ export default function Contact() {
               <div className="bg-white p-8 rounded-lg shadow-sm border border-border text-center font-roboto">
                 <div className="flex justify-center mb-4">
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-pNYkQZ92m2uzRz3O05t61hRocJKYeu.png"
+                    src="/location-pin-blue.png"
                     alt="Location"
                     className="w-16 h-16 object-contain"
                   />

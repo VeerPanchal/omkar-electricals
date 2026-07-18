@@ -38,9 +38,6 @@ export function Header() {
             <Link href="/area-of-work" className="text-foreground hover:text-accent font-medium transition">
               Area of Work
             </Link>
-            <Link href="/contact" className="text-foreground hover:text-accent font-medium transition">
-              Contact us
-            </Link>
           </div>
 
           {/* CTA Button */}
@@ -93,13 +90,6 @@ export function Header() {
               onClick={() => setIsOpen(false)}
             >
               Area of Work
-            </Link>
-            <Link
-              href="/contact"
-              className="block text-foreground hover:text-accent font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact us
             </Link>
             <Link
               href="/contact"
