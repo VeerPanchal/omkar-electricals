@@ -178,7 +178,7 @@ export default function Services() {
               {[
                 {
                   title: 'Expert Team',
-                  description: 'Highly skilled and 10+ years of experienced electrical professionals.',
+                  description: 'Highly skilled and 30+ years of experienced electrical professionals.',
                 },
                 {
                   title: 'Quality Assurance',
