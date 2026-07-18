@@ -1,89 +1,10 @@
 'use client'
 
-import { useState } from 'react'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { MapPin, Phone, Mail } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
-  const [submitMessage, setSubmitMessage] = useState('')
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-
-    // Basic validation
-    if (
-      !formData.name ||
-      !formData.email ||
-      !formData.phone ||
-      !formData.subject ||
-      !formData.message
-    ) {
-      setSubmitStatus('error')
-      setSubmitMessage('Please fill in all fields')
-      return
-    }
-
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(formData.email)) {
-      setSubmitStatus('error')
-      setSubmitMessage('Please enter a valid email address')
-      return
-    }
-
-    setIsSubmitting(true)
-
-    try {
-      // Simulate form submission
-      // In a real application, you would send this to your backend
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-
-      // Log form data (in production, send to your backend)
-      console.log('[v0] Contact form submitted:', formData)
-
-      setSubmitStatus('success')
-      setSubmitMessage('Thank you! We will get back to you soon.')
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
-      })
-
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus('idle')
-        setSubmitMessage('')
-      }, 5000)
-    } catch (error) {
-      console.error('[v0] Form submission error:', error)
-      setSubmitStatus('error')
-      setSubmitMessage('An error occurred. Please try again.')
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
 
   return (
     <>
@@ -121,168 +42,42 @@ export default function Contact() {
                 </p>
               </div>
 
-              {/* Connect Us */}
+              {/* Quick Contact */}
               <div className="bg-white p-8 rounded-lg shadow-sm border border-border font-roboto">
-                <div className="text-center mb-6">
-                  <div className="flex justify-center mb-4">
-                    <div className="bg-secondary p-4 rounded-lg">
-                      <Phone className="text-accent" size={32} />
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground">Connect us</h3>
-                </div>
-                <div className="space-y-4">
-                  <div className="text-center">
-                    <p className="text-gray-600 text-sm font-semibold mb-1">Email</p>
-                    <a
-                      href="mailto:omkar@electricals.com"
-                      className="text-accent hover:underline font-normal"
-                    >
-                      omkar@electricals.com
-                    </a>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-gray-600 text-sm font-semibold mb-1">Phone</p>
-                    <a
-                      href="tel:+917721027474"
-                      className="text-accent hover:underline font-normal"
-                    >
-                      (+91) 7721027474
-                    </a>
-                    <br />
-                    <a
-                      href="tel:+919209254245"
-                      className="text-accent hover:underline font-normal"
-                    >
-                      (+91) 9209254245
-                    </a>
-                  </div>
+                <h3 className="text-xl font-semibold text-foreground mb-6 text-center">Quick Contact</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <a
+                    href="tel:+917721027474"
+                    className="bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 px-6 rounded text-center transition"
+                  >
+                    CALL NOW
+                  </a>
+                  <a
+                    href="https://wa.me/919209254245"
+                    className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded text-center transition"
+                  >
+                    WHATSAPP
+                  </a>
                 </div>
               </div>
+            {/* Get Directions */}
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-border font-roboto">
+              <div className="flex items-start gap-3 mb-4">
+                <span className="text-foreground font-bold text-lg">GET DIRECTIONS</span>
+                <span className="text-xl">⬈</span>
+              </div>
+              <p className="text-gray-700 text-base mb-6">
+                Click the button below to open our location in Google Maps and get turn-by-turn directions to Omkar Electricals.
+              </p>
+              <a
+                href="https://maps.app.goo.gl/4Qx4ZTJsPG36AUD57"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 px-6 rounded text-center transition"
+              >
+                OPEN IN GOOGLE MAPS
+              </a>
             </div>
-          </div>
-        </section>
-
-        {/* Contact Form Section */}
-        <section className="bg-secondary py-16 md:py-24 px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: '#fabc00' }}>
-              Tell us About Yourself
-            </h2>
-
-            <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-sm">
-              {/* Status Messages */}
-              {submitStatus === 'success' && (
-                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded text-green-800">
-                  {submitMessage}
-                </div>
-              )}
-              {submitStatus === 'error' && (
-                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded text-red-800">
-                  {submitMessage}
-                </div>
-              )}
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                {/* Name */}
-                <div>
-                  <label htmlFor="name" className="block text-foreground font-semibold mb-2">
-                    Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    placeholder="Your Name"
-                    className="w-full px-4 py-3 bg-input border border-border rounded focus:outline-none focus:ring-2 focus:ring-accent"
-                    required
-                  />
-                </div>
-
-                {/* Email */}
-                <div>
-                  <label htmlFor="email" className="block text-foreground font-semibold mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder="your@email.com"
-                    className="w-full px-4 py-3 bg-input border border-border rounded focus:outline-none focus:ring-2 focus:ring-accent"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                {/* Phone */}
-                <div>
-                  <label htmlFor="phone" className="block text-foreground font-semibold mb-2">
-                    Contact Number *
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    placeholder="(+91) XXXXXXXXXX"
-                    className="w-full px-4 py-3 bg-input border border-border rounded focus:outline-none focus:ring-2 focus:ring-accent"
-                    required
-                  />
-                </div>
-
-                {/* Subject */}
-                <div>
-                  <label htmlFor="subject" className="block text-foreground font-semibold mb-2">
-                    Subject *
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    placeholder="What is this about?"
-                    className="w-full px-4 py-3 bg-input border border-border rounded focus:outline-none focus:ring-2 focus:ring-accent"
-                    required
-                  />
-                </div>
-              </div>
-
-              {/* Message */}
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-foreground font-semibold mb-2">
-                  Message *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  placeholder="Your message here..."
-                  rows={6}
-                  className="w-full px-4 py-3 bg-input border border-border rounded focus:outline-none focus:ring-2 focus:ring-accent resize-none"
-                  required
-                />
-              </div>
-
-              {/* Submit Button */}
-              <div className="text-right">
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="bg-yellow-400 text-foreground px-8 py-3 rounded font-bold hover:opacity-90 transition disabled:opacity-50"
-                >
-                  {isSubmitting ? 'Submitting...' : 'Submit'}
-                </button>
-              </div>
-            </form>
           </div>
         </section>
       </main>
