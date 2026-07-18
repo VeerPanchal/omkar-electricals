@@ -45,22 +45,6 @@ export function Footer() {
               </li>
             </ul>
           </div>
-        </div>
-
-        {/* Divider */}
-        <div className="border-t border-gray-700 pt-8">
-          {/* Social links */}
-          <div className="flex justify-center gap-6 mb-6">
-            <a href="#" aria-label="Facebook" className="text-gray-300 hover:text-accent transition">
-              <Share2 size={20} />
-            </a>
-            <a href="#" aria-label="LinkedIn" className="text-gray-300 hover:text-accent transition">
-              <Users size={20} />
-            </a>
-            <a href="#" aria-label="Twitter" className="text-gray-300 hover:text-accent transition">
-              <MessageSquare size={20} />
-            </a>
-          </div>
 
           {/* Copyright */}
           <div className="text-center text-gray-400 text-sm">
