@@ -28,9 +28,11 @@ export default function Contact() {
               {/* Head Office */}
               <div className="bg-white p-8 rounded-lg shadow-sm border border-border text-center font-roboto">
                 <div className="flex justify-center mb-4">
-                  <div className="bg-secondary p-4 rounded-lg">
-                    <MapPin className="text-accent" size={32} />
-                  </div>
+                  <img
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-pNYkQZ92m2uzRz3O05t61hRocJKYeu.png"
+                    alt="Location"
+                    className="w-16 h-16 object-contain"
+                  />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-4">Head Office</h3>
                 <p className="text-gray-700 text-base leading-relaxed font-roboto">
@@ -66,7 +68,11 @@ export default function Contact() {
             <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
               <div className="flex items-center justify-center gap-3 mb-4 font-geist text-center">
                 <span className="text-foreground font-bold text-lg">GET DIRECTIONS</span>
-                <span className="text-xl">⬈</span>
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2811%29-21TzetIXpvya2Yzvvn2OzcYiXmIQeH.png"
+                  alt="Arrow"
+                  className="w-6 h-6 object-contain"
+                />
               </div>
               <p className="text-gray-700 text-base mb-6 font-geist">
                 Click the button below to open our location in Google Maps and get turn-by-turn directions to Omkar Electricals.
