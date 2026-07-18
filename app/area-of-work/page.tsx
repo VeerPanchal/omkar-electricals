@@ -78,7 +78,7 @@ export default function AreaOfWork() {
                 </p>
 
                 {/* Logos Display */}
-                <div className="flex flex-wrap items-center justify-start gap-12 md:gap-16">
+                <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16">
                   {sector.logos.map((logo) => (
                     <div
                       key={logo.name}
