@@ -60,6 +60,8 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
+            </div>
+
             {/* Get Directions */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-border font-roboto">
               <div className="flex items-start gap-3 mb-4">
