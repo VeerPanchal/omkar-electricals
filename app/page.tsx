@@ -106,7 +106,7 @@ export default function Home() {
                 },
               ].map((service) => (
                 <div key={service.title} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition">
-                  <div className="w-full h-40 overflow-hidden">
+                  <div className="w-110 h-80 overflow-hidden">
                     <img
                       src={service.image}
                       alt={service.title}
