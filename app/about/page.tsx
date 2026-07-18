@@ -23,7 +23,7 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <p className="text-gray-600 leading-relaxed mb-4 font-geist text-justify">
+                <p className="text-gray-1000 leading-relaxed mb-4 font-geist text-justify">
                   Omkar Electricals is a comprehensive electrical contracting and service organization. Our programme involves a dynamic and committed work force that serves its clients in meeting and exceeding their commitment towards sustainable built environment, energy efficiency and safety compliance.
                 </p>
               </div>
@@ -47,7 +47,7 @@ export default function About() {
               Omkar Electricals envisions being a flag-bearer for sustainable electrical solutions. We promote sustainability movement and create awareness about sustainable habitat by highlighting strategies.
             </p>
 
-            <p className="mb-6 leading-relaxed text-justify border-l-4 pl-4" style={{borderColor: '#0b72ff', color: '#1682fc'}}>
+            <p className="mb-6 leading-relaxed text-justify border-l-4 pl-4" style={{ borderColor: '#0b72ff', color: '#1682fc' }}>
               At present we are conducting the following programmes: the Energy Audit, Safety Audit, ISO - 9001, 14001, 45001, 50001 Audit and certification.
             </p>
 

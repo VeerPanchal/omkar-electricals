@@ -56,10 +56,10 @@ export default function AreaOfWork() {
         {/* Hero Section */}
         <section className="bg-background py-12 px-4">
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-6 font-geist">
+            <h1 className="<p className="text-lg text-gray-700 mb-12 max-w-8xl font-geist">
               Area of <span className="text-accent">Work</span>
             </h1>
-            <p className="text-lg text-gray-600 max-w-2xl font-geist">
+            <p className="text-lg text-gray-600 max-w-8xl font-geist">
               Our expertise spans across a wide range of sectors, where we have successfully completed numerous electrical projects for industrial facilities, banking institutions, commercial buildings, residential developments, hospitals, educational institutions, hospitality establishments, and real estate projects. We are committed to delivering safe, reliable, and high-quality electrical solutions that meet the highest industry standards.
             </p>
           </div>
