@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-white">
       {/* Main footer content */}
-      <div className="max-w-7xl mx-auto px-4 py-12 font-geist">
+      <div className="max-w-5xl mx-auto px-4 py-12 font-geist">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mb-8">
           {/* About section */}
           <div>
