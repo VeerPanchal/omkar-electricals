@@ -104,13 +104,13 @@ export default function AreaOfWork() {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
                 {/* Stat 1 */}
                 <div className="text-center">
-                  <h3 className="text-5xl md:text-6xl font-semibold mb-2 font-roboto" style={{ color: '#1F2937' }}>500+</h3>
+                  <h3 className="text-5xl md:text-6xl font-semibold mb-2 font-roboto" style={{ color: '#1F2937' }}>700+</h3>
                   <p className="text-lg md:text-xl font-inter" style={{ color: '#1F2937' }}>Happy Clients</p>
                 </div>
 
                 {/* Stat 2 */}
                 <div className="text-center">
-                  <h3 className="text-5xl md:text-6xl font-semibold mb-2 font-roboto" style={{ color: '#1F2937' }}>40+</h3>
+                  <h3 className="text-5xl md:text-6xl font-semibold mb-2 font-roboto" style={{ color: '#1F2937' }}>55+</h3>
                   <p className="text-lg md:text-xl font-inter" style={{ color: '#1F2937' }}>Locations</p>
                 </div>
 
@@ -122,7 +122,7 @@ export default function AreaOfWork() {
 
                 {/* Stat 4 */}
                 <div className="text-center">
-                  <h3 className="text-5xl md:text-6xl font-semibold mb-2 font-roboto" style={{ color: '#1F2937' }}>40+</h3>
+                  <h3 className="text-5xl md:text-6xl font-semibold mb-2 font-roboto" style={{ color: '#1F2937' }}>45+</h3>
                   <p className="text-lg md:text-xl font-inter" style={{ color: '#1F2937' }}>Professionals</p>
                 </div>
               </div>
