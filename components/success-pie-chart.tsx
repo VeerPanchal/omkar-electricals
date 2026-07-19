@@ -110,9 +110,9 @@ export function SuccessPieChart() {
             wrapperStyle={{
               paddingTop: '24px',
               display: 'flex',
-              justifyContent: 'flex-start',
+              justifyContent: 'center',
               flexWrap: 'wrap',
-              gap: '24px',
+              gap: '34px',
             }}
             iconType="circle"
             formatter={(value) => <span className="text-sm text-foreground font-geist">{value}</span>}
