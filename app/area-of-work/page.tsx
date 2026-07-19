@@ -2,6 +2,7 @@
 
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { SuccessPieChart } from '@/components/success-pie-chart'
 
 export default function AreaOfWork() {
   const sectors = [
@@ -94,6 +95,16 @@ export default function AreaOfWork() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Success Pie Chart Section */}
+        <section className="py-12 md:py-16 px-4">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-12 text-center font-geist">
+              Our Success <span className="text-accent">Achievements</span>
+            </h2>
+            <SuccessPieChart />
           </div>
         </section>
 
