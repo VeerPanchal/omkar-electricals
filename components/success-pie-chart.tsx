@@ -6,7 +6,7 @@ import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from 'recha
 const rawData = [
   { name: 'Developers & Real Estate', value: 300 },
   { name: 'Commercial Buildings', value: 95 },
-  { name: 'Banking & Financial Services', value: 98 },
+  { name: 'Banking Services', value: 98 },
   { name: 'Institutional', value: 100 },
 ]
 
