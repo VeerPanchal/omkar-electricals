@@ -25,6 +25,8 @@ export function SuccessPieChart() {
         }`}
     >
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Roboto:wght@400;500;600&display=swap');
+        
         .recharts-wrapper {
           overflow: visible !important;
         }
@@ -33,6 +35,7 @@ export function SuccessPieChart() {
           font-size: 13px !important;
           font-weight: 600 !important;
           fill: #1f2937 !important;
+          font-family: "Roboto", sans-serif !important;
         }
         
         .recharts-label-line {
@@ -42,6 +45,23 @@ export function SuccessPieChart() {
         
         .recharts-legend-wrapper {
           padding-top: 24px !important;
+        }
+
+        .recharts-default-legend {
+          font-family: "Geist", sans-serif !important;
+        }
+
+        .recharts-default-legend li {
+          font-family: "Geist", sans-serif !important;
+        }
+
+        .recharts-wrapper svg text {
+          font-family: "Roboto", sans-serif !important;
+        }
+
+        .recharts-pie text {
+          font-family: "Roboto", sans-serif !important;
+          font-weight: 500 !important;
         }
       `}</style>
 
