@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from 'recharts'
 
-const data = [
+const rawData = [
   { name: 'Developers & Real Estate', value: 300 },
   { name: 'Commercial Buildings', value: 95 },
   { name: 'Banking & Financial Services', value: 98 },
@@ -11,6 +11,13 @@ const data = [
 ]
 
 const COLORS = ['#FF3F14', '#4997F5', '#F2DB13', '#49CF3A']
+
+// Calculate total and add percentage to each data point
+const total = rawData.reduce((sum, item) => sum + item.value, 0)
+const data = rawData.map((item) => ({
+  ...item,
+  percentage: ((item.value / total) * 100).toFixed(2),
+}))
 
 export function SuccessPieChart() {
   const [isAnimating, setIsAnimating] = useState(false)
@@ -49,10 +56,12 @@ export function SuccessPieChart() {
 
         .recharts-default-legend {
           font-family: "Geist", sans-serif !important;
+          font-size: 18px !important;
         }
 
         .recharts-default-legend li {
           font-family: "Geist", sans-serif !important;
+          font-size: 18px !important;
         }
 
         .recharts-wrapper svg text {
@@ -75,7 +84,7 @@ export function SuccessPieChart() {
             outerRadius={120}
             paddingAngle={2}
             dataKey="value"
-            label
+            label={({ percentage }) => `${percentage}%`}
             labelLine={true}
             animationBegin={0}
             animationDuration={1500}
