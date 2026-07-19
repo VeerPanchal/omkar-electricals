@@ -14,8 +14,8 @@ export function Footer() {
           {/* About section */}
           <div>
             <h3 className="font-medium text-lg mb-4">Omkar Electricals</h3>
-            <p className="text-gray-300 text-sm">
-              Professional Government electrical contracting services for residential, commercial, and industrial projects.
+            <p className="text-gray-300 text-sm text-left">
+              Professional Govt. license electrical contracting services for residential, commercial, and industrial projects.
             </p>
           </div>
 
