@@ -12,12 +12,6 @@ export function Footer() {
       <div className="max-w-5xl mx-auto px-4 py-12 font-geist">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mb-8">
           {/* About section */}
-          <div>
-            <h3 className="font-medium text-lg mb-4">Omkar Electricals</h3>
-            <p className="text-gray-300 text-sm text-left">
-              Professional Govt. license electrical contracting services for residential, commercial, and industrial projects.
-            </p>
-          </div>
 
           {/* Quick links */}
           <div>
