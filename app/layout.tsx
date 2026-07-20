@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Geist, Inter, Roboto } from 'next/font/google'
 import { Quicksand } from 'next/font/google'
+import { SplashScreenProvider } from '@/components/splash-screen-provider'
 import './globals.css'
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
@@ -49,7 +50,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`bg-background ${fontClassName}`}>
       <body className="antialiased">
-        {children}
+        <SplashScreenProvider>
+          {children}
+        </SplashScreenProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
