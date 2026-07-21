@@ -229,7 +229,7 @@ export default function Services() {
             </p>
             <a
               href="/contact"
-              className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-bold hover:opacity-90 transition font-inter"
+              className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-medium hover:opacity-90 transition font-inter"
             >
               Contact
             </a>
