@@ -12,37 +12,10 @@ const jobListings = [
     id: 'senior-electrician',
     title: 'Senior Electrician',
     department: 'Technical',
-    location: 'Mumbai, India',
+    location: 'Kolhapur, Maharashtra',
     experience: '5+ years',
     type: 'Full-Time' as const,
     description: 'Lead electrical installations and maintenance projects with expertise in residential and commercial systems.',
-  },
-  {
-    id: 'junior-electrician',
-    title: 'Junior Electrician',
-    department: 'Technical',
-    location: 'Bangalore, India',
-    experience: '1-3 years',
-    type: 'Full-Time' as const,
-    description: 'Support senior electricians in installation, repair, and maintenance of electrical systems.',
-  },
-  {
-    id: 'electrical-engineer',
-    title: 'Electrical Engineer',
-    department: 'Engineering',
-    location: 'Delhi, India',
-    experience: '3-5 years',
-    type: 'Full-Time' as const,
-    description: 'Design and oversee electrical projects for industrial and commercial clients.',
-  },
-  {
-    id: 'project-manager',
-    title: 'Project Manager',
-    department: 'Management',
-    location: 'Pune, India',
-    experience: '5+ years',
-    type: 'Full-Time' as const,
-    description: 'Manage large-scale electrical projects, coordinate teams, and ensure client satisfaction.',
   },
   {
     id: 'apprentice-electrician',
@@ -52,33 +25,6 @@ const jobListings = [
     experience: 'Fresher',
     type: 'Internship' as const,
     description: 'Learn electrical trade under expert supervision while gaining hands-on experience.',
-  },
-  {
-    id: 'electrical-technician',
-    title: 'Electrical Technician',
-    department: 'Technical',
-    location: 'Hyderabad, India',
-    experience: '2-4 years',
-    type: 'Full-Time' as const,
-    description: 'Perform installation, testing, and troubleshooting of electrical systems.',
-  },
-  {
-    id: 'safety-officer',
-    title: 'Safety Officer',
-    department: 'Safety',
-    location: 'Mumbai, India',
-    experience: '3-5 years',
-    type: 'Full-Time' as const,
-    description: 'Ensure workplace safety compliance and conduct safety training programs.',
-  },
-  {
-    id: 'administrative-coordinator',
-    title: 'Administrative Coordinator',
-    department: 'Administration',
-    location: 'Delhi, India',
-    experience: '1-3 years',
-    type: 'Part-Time' as const,
-    description: 'Support administrative operations and client communication processes.',
   },
 ]
 
@@ -147,13 +93,13 @@ const applicantCategories = [
 const timelineSteps = [
   {
     number: 1,
-    title: 'Application Submission',
+    title: 'Application Submission through WhatsApp',
     description: 'Submit your application with your resume and cover letter through our online portal.',
   },
   {
     number: 2,
-    title: 'Screening & Interview',
-    description: 'Our HR team reviews your application and conducts an initial screening interview.',
+    title: 'Interview',
+    description: 'Our senior professionals reviews your application and conducts an initial face-to-face interview.',
   },
   {
     number: 3,
@@ -163,7 +109,7 @@ const timelineSteps = [
   {
     number: 4,
     title: 'Final Interview & Offer',
-    description: 'Meet with senior management for final discussion and receive offer letter.',
+    description: 'Meet with senior management and owner for final discussion and receive offer letter.',
   },
 ]
 
@@ -173,8 +119,8 @@ export default function CareersPage() {
       {/* Hero Section */}
       <section className="bg-foreground text-white py-16 md:py-24 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-semibold mb-6 font-geist">Build Your Career With Us</h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto font-inter">
+          <h1 className="text-3xl md:text-4xl font-medium mb-6 font-geist">Build Your Career With Us</h1>
+          <p className="text-base md:text-lg text-gray-300 mb-8 max-w-3xl mx-auto font-inter">
             Join Omkar Electricals and become part of a team that&apos;s revolutionizing the electrical industry with innovation, safety, and excellence.
           </p>
           <a
@@ -189,7 +135,7 @@ export default function CareersPage() {
       {/* Why Join Us Section */}
       <section className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 font-geist">Why Join Omkar Electricals?</h2>
+          <h2 className="text-2xl md:text-3xl font-medium text-center mb-12 font-geist">Why Join Omkar Electricals?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard
               icon="🚀"
@@ -216,11 +162,11 @@ export default function CareersPage() {
       {/* For Every Type of Professional Section */}
       <section className="py-12 md:py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 font-geist">Opportunities For Everyone</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-center mb-12 font-geist">Opportunities For Everyone</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {applicantCategories.map((category, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-semibold text-foreground mb-2 font-geist">{category.title}</h3>
+                <h3 className="text-lg font-semibold text-foreground mb-2 font-inter">{category.title}</h3>
                 <p className="text-gray-600 text-sm font-inter">{category.description}</p>
               </div>
             ))}
@@ -231,7 +177,7 @@ export default function CareersPage() {
       {/* Open Positions Section */}
       <section id="positions" className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 font-geist">Open Positions</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-center mb-12 font-geist">Open Positions</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {jobListings.map((job) => (
               <JobCard key={job.id} {...job} />
@@ -243,7 +189,7 @@ export default function CareersPage() {
       {/* Benefits Section */}
       <section className="py-12 md:py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 font-geist">What We Offer</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-center mb-12 font-geist">What We Offer</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ChecklistCard title="Professional Benefits" items={benefitCategories.professional} />
             <ChecklistCard title="Work-Life Balance" items={benefitCategories.workLife} />
@@ -256,7 +202,7 @@ export default function CareersPage() {
       {/* Application Timeline Section */}
       <section className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 font-geist">Application Process</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-center mb-12 font-geist">Application Process</h2>
           <div className="max-w-3xl mx-auto">
             {timelineSteps.map((step, index) => (
               <TimelineStep
