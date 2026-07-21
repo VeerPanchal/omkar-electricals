@@ -4,7 +4,6 @@ import { FeatureCard } from '@/components/careers/feature-card'
 import { JobCard } from '@/components/careers/job-card'
 import { ChecklistCard } from '@/components/careers/checklist-card'
 import { TimelineStep } from '@/components/careers/timeline-step'
-import { ApplicationForm } from '@/components/careers/application-form'
 import Link from 'next/link'
 
 const jobListings = [
@@ -163,7 +162,7 @@ export default function CareersPage() {
       <section className="py-12 md:py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-medium text-center mb-12 font-geist">Opportunities For Everyone</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-geist">
             {applicantCategories.map((category, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-semibold text-foreground mb-2 font-inter">{category.title}</h3>
@@ -190,7 +189,7 @@ export default function CareersPage() {
       <section className="py-12 md:py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-medium text-center mb-12 font-geist">What We Offer</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-geist">
             <ChecklistCard title="Professional Benefits" items={benefitCategories.professional} />
             <ChecklistCard title="Work-Life Balance" items={benefitCategories.workLife} />
             <ChecklistCard title="Growth & Development" items={benefitCategories.growth} />
@@ -217,15 +216,7 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Application Form Section */}
-      <section className="py-12 md:py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 font-geist">Ready to Apply?</h2>
-          <ApplicationForm />
-        </div>
-      </section>
-
-      {/* Apprenticeship Section */}
+  {/* Apprenticeship Section */}
       <section className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -237,11 +228,11 @@ export default function CareersPage() {
               />
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-semibold mb-6 font-geist">Apprenticeship Program</h2>
-              <p className="text-lg text-gray-600 mb-6 font-inter">
-                Our structured apprenticeship program is designed to teach you the electrical trade from the ground up. Learn from industry experts while earning and gaining practical experience.
+              <h2 className="text-2xl md:text-3xl font-medium mb-6 font-geist">Apprenticeship Program</h2>
+              <p className="text-lg text-gray-600 mb-6 font-geist">
+                Our structured apprenticeship program is designed to teach you the electrical trade from the ground up. Learn from industry experts while earning and gaining practical experience along with professional experience letter with Govt. stamp.
               </p>
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 font-geist">
                 <li className="flex items-center gap-3 text-gray-700 font-inter">
                   <span className="text-blue-500 font-bold">✓</span> Comprehensive training curriculum
                 </li>
@@ -274,11 +265,11 @@ export default function CareersPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-3xl md:text-4xl font-semibold mb-6 font-geist">Employment Opportunities</h2>
-              <p className="text-lg text-gray-600 mb-6 font-inter">
+              <h2 className="text-2xl md:text-3xl font-medium mb-6 font-geist">Employment Opportunities</h2>
+              <p className="text-lg text-gray-600 mb-6 font-geist">
                 Whether you&apos;re looking for permanent or temporary positions, we have opportunities across various departments and skill levels. Our team is committed to finding the right fit for your career goals.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-4 font-geist">
                 <div className="bg-white p-6 rounded-lg border border-gray-200">
                   <h3 className="font-semibold text-foreground mb-2 font-geist">Permanent Positions</h3>
                   <p className="text-gray-600 text-sm font-inter">Full-time roles with benefits and growth opportunities.</p>
@@ -307,7 +298,7 @@ export default function CareersPage() {
       {/* Final CTA Section */}
       <section className="bg-blue-500 text-white py-12 md:py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6 font-geist">Ready to Start Your Journey?</h2>
+          <h2 className="text-3xl md:text-4xl font-medium mb-6 font-geist">Ready to Start Your Journey?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto font-inter">
             Submit your application today and join a team of dedicated professionals building the future of electrical solutions.
           </p>
