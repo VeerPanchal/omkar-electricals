@@ -137,19 +137,19 @@ export default function CareersPage() {
           <h2 className="text-2xl md:text-3xl font-medium text-center mb-12 font-geist">Why Join Omkar Electricals?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard
-              icon="🚀"
+              iconUrl="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2817%29-33ymOF5D95zDS0nmEGZr6DaecoBSJw.png"
               title="Growth Opportunities"
               description="Advance your career with continuous learning and development programs tailored to your goals."
               accent="blue"
             />
             <FeatureCard
-              icon="🤝"
+              iconUrl="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2818%29-1eyxgQ34kZz6R9d32U3zL2xWbW1dee.png"
               title="Team Culture"
               description="Work with experienced professionals in a supportive and inclusive environment."
               accent="orange"
             />
             <FeatureCard
-              icon="⭐"
+              iconUrl="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bee432169c33d337aed781e831396087-removebg-preview-IvbP4sdF6jHbXLEQ7jL9edVFu4cTgX.png"
               title="Excellence"
               description="Be part of a company committed to quality, innovation, and customer satisfaction."
               accent="yellow"
