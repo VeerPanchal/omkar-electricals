@@ -161,10 +161,15 @@ export default function Home() {
             </p>
             <button
               onClick={handleBrochureDownload}
-              className="inline-block px-8 py-3 rounded font-medium hover:opacity-90 transition font-inter cursor-pointer text-white"
+              className="inline-flex items-center gap-3 px-8 py-3 rounded font-medium hover:opacity-90 transition font-inter cursor-pointer text-white"
               style={{ backgroundColor: '#e81717' }}
             >
               Download Brochure
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2819%29-qnobTlu32U2xgT7f8N5xhwRup0KcSc.png"
+                alt="Download icon"
+                className="w-5 h-5"
+              />
             </button>
           </div>
         </section>
