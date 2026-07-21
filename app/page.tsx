@@ -140,12 +140,12 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <Link
-                href="/services"
-                className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-medium hover:opacity-90 transition font-inter"
+              <button
+                onClick={handleBrochureDownload}
+                className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-medium hover:opacity-90 transition font-inter cursor-pointer"
               >
-                View All Services
-              </Link>
+                Download Brochure
+              </button>
             </div>
           </div>
         </section>
