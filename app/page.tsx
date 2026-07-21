@@ -168,7 +168,7 @@ export default function Home() {
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2820%29-O93XTCqx94FrgBLROhZZAeM2mTPMj7.png"
                 alt="Download icon"
-                className="w-5 h-5"
+                style={{ width: '18px', height: '18px' }}
               />
             </button>
           </div>
