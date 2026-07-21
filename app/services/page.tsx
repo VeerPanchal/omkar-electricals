@@ -147,12 +147,28 @@ export default function Services() {
                   description: 'Hidden wiring solutions that maintain aesthetic appeal while ensuring safety.',
                 },
                 {
+                  title: 'Rewiring and/or upgrading existing facilities',
+                  description: 'Upgrade and modernize existing electrical systems for safe, reliable, and efficient performance.',
+                },
+                {
+                  title: 'Routine maintenance',
+                  description: 'Regular electrical maintenance to ensure safe, efficient, and uninterrupted operations.',
+                },
+                {
                   title: 'Solar Installation',
                   description: 'Renewable energy solutions with professional solar panel installation and setup.',
                 },
                 {
                   title: 'Lighting Design',
                   description: 'Comprehensive lighting solutions tailored to your space and requirements.',
+                },
+                {
+                  title: 'Emergency services',
+                  description: 'Immediate electrical assistance for emergencies, ensuring safety and uninterrupted operations.',
+                },
+                {
+                  title: 'Top-to-bottom efficiency analysis',
+                  description: 'Detailed electrical efficiency analysis for reliable and cost-effective operations.',
                 },
               ].map((item) => (
                 <div key={item.title} className="bg-white p-6 rounded-lg">
