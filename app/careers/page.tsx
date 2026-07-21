@@ -4,7 +4,6 @@ import { FeatureCard } from '@/components/careers/feature-card'
 import { JobCard } from '@/components/careers/job-card'
 import { ChecklistCard } from '@/components/careers/checklist-card'
 import { TimelineStep } from '@/components/careers/timeline-step'
-import { ApplicationForm } from '@/components/careers/application-form'
 import Link from 'next/link'
 
 const jobListings = [
@@ -217,15 +216,7 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Application Form Section */}
-      <section className="py-12 md:py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 font-geist">Ready to Apply?</h2>
-          <ApplicationForm />
-        </div>
-      </section>
-
-      {/* Apprenticeship Section */}
+  {/* Apprenticeship Section */}
       <section className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
