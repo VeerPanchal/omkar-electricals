@@ -46,7 +46,7 @@ export function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="text-center text-gray-200 text-sm">
+          <div className="text-center text-gray-300 text-sm">
             <p>© Omkar Electricals {currentYear}, Design & developed by Aniruddha Ambekar</p>
           </div>
         </div>
