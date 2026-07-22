@@ -228,12 +228,12 @@ export default function CareersPage() {
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-glqgaNnv8MfKtHIb3fpHo4qd2gFrAv.png"
                   alt="Apprenticeship Program"
-                  className="w-full h-auto rounded-lg"
+                  className="w-[600px] h-auto rounded-lg"
                 />
               </div>
               <div>
                 <h2 className="text-2xl md:text-3xl font-medium mb-6 font-geist">Apprenticeship Program</h2>
-                <p className="text-lg text-gray-600 mb-6 font-geist">
+                <p className="mb-6 font-geist" style={{ fontSize: '17px', color: '#005ee1', textAlign: 'justify' }}>
                   Our structured apprenticeship program is designed to teach you the electrical trade from the ground up. Learn from industry experts while earning and gaining practical experience along with professional experience letter with Govt. stamp.
                 </p>
                 <ul className="space-y-3 mb-8 font-geist">
