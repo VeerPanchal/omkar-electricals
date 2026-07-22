@@ -14,7 +14,7 @@ const fontClassName = `${geist.variable} ${inter.variable} ${quicksand.variable}
 
 export const metadata: Metadata = {
   title: 'Omkar Electricals - Professional Electrical Services',
-  description: 'Omkar Electricals provides professional electrical contracting services including residential wiring, industrial installation, and electrical maintenance.',
+  description: 'Omkar Electricals provides professional electrical contracting services including residential wiring, industrial installation, government and electrical maintenance.',
   generator: 'v0.app',
   icons: {
     icon: [
