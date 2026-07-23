@@ -18,7 +18,7 @@ export function TimelineStep({ number, title, description, isLast = false }: Tim
       </div>
       <div className="pb-8">
         <h3 className="text-lg font-semibold text-foreground mb-2 font-geist">{title}</h3>
-        <p className="text-gray-600 font-inter" style={{ textAlign: 'justify' }}>{description}</p>
+        <p className="text-gray-600 font-inter">{description}</p>
       </div>
     </div>
   )
