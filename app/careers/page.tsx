@@ -95,7 +95,7 @@ const timelineSteps = [
   {
     number: 1,
     title: 'Application Submission through WhatsApp',
-    description: 'Submit your application with your resume and cover letter through our online portal.',
+    description: 'Submit your application with your resume and cover letter through our WhatsApp.',
   },
   {
     number: 2,
