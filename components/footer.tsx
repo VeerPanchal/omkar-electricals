@@ -16,7 +16,7 @@ export function Footer() {
           {/* Quick links */}
           <div className="text-left">
             <h3 className="font-medium text-lg mb-2">Quick Links</h3>
-            <ul className="flex flex-wrap gap-6 text-sm">
+            <ul className="flex flex-wrap gap-6 text-sm" style={{ textAlign: 'justify' }}>
               <li>
                 <Link href="/" className="text-gray-300 hover:text-accent transition">
                   Home

@@ -36,9 +36,9 @@ export default function Contact() {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-4 font-roboto">Head Office</h3>
                 <p className="text-gray-700 text-base leading-relaxed" style={{ fontFamily: '"Inter", sans-serif' }}>
-                  Janwadkar complex lower ground (LG-2), Panchaganga hospital,
+                  Janwadkar Complex lower ground (LG-2), Panchaganga Hospital,
                   <br />
-                  2116 Shukrawar peth, Kolhapur (416002),
+                  2116 Shukrawar Peth, Kolhapur (416002),
                   <br />
                   Maharashtra
                 </p>
