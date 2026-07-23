@@ -96,7 +96,7 @@ export default function Home() {
         </section>
 
         {/* Services Preview */}
-        <section className="bg-secondary py-16 md:py-24 px-4">
+        <section className="bg-secondary px-4" style={{ paddingTop: '76px', paddingBottom: '96px' }}>
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-semibold text-center text-foreground mb-4 font-geist">
               Our Services
@@ -151,7 +151,7 @@ export default function Home() {
         </section>
 
         {/* Electrical Services List */}
-        <section className="py-16 md:py-24 px-4 bg-background">
+        <section className="px-4 bg-background" style={{ paddingTop: '66px', paddingBottom: '96px' }}>
           <div className="max-w-5xl mx-auto">
             <h2 className="font-normal text-foreground mb-12 font-geist text-center" style={{ fontSize: '30px' }}>
               We carry out Electrical services like

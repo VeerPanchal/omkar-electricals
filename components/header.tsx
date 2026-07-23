@@ -10,7 +10,7 @@ export function Header() {
   return (
     <header className="bg-white border-b border-border">
       {/* Main navigation */}
-      <nav className="py-1.5 px-4 font-inter">
+      <nav className="px-4 font-inter" style={{ paddingTop: '5px', paddingBottom: '5px' }}>
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
