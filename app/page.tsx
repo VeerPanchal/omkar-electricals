@@ -153,10 +153,10 @@ export default function Home() {
         {/* Electrical Services List */}
         <section className="py-16 md:py-24 px-4 bg-background">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-8 font-geist">
+            <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-8 font-geist text-center">
               We carry out Electrical services like
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8" style={{ textAlign: 'left' }}>
               <div className="flex items-start gap-3">
                 <span className="text-accent font-bold text-lg">•</span>
                 <p className="text-gray-700 text-base font-geist">Panel Testing</p>
