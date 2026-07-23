@@ -17,7 +17,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
     const handleVideoEnd = () => {
       // Fade out the splash screen
       setIsVisible(false)
-      
+
       // Call onComplete after fade animation finishes
       const fadeTimeout = setTimeout(() => {
         onComplete()
@@ -44,13 +44,12 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
 
   return (
     <div
-      className={`fixed inset-0 z-50 bg-black flex items-center justify-center transition-opacity duration-500 ${
-        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
-      }`}
+      className={`fixed inset-0 z-50 bg-black flex items-center justify-center transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
     >
       <video
         ref={videoRef}
-        className="w-full h-full object-contain"
+        className="w-[500px] h-[800px] object-contain"
         playsInline
         muted
         autoPlay
